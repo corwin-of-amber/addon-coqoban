@@ -4,7 +4,7 @@
  (deps
   (package coq-coqoban))
  (action
-  (run npx %{env:pkgtool=jscoq} build workdir
+  (run npx %{env:pkgtool=jscoq} build workdir --top Coqoban
        --package coq-pkgs/coqoban.coq-pkg)))
 
 (alias
